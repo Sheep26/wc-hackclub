@@ -1,20 +1,25 @@
 {
-  "name": "wc-hackclub",
+  "name": "13dts-database-assesment",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Sheep26/wc-hackclub#readme",
+  "homepage": "https://github.com/Sheep26/13DTS-Database-Assesment#readme",
   "bugs": {
-    "url": "https://github.com/Sheep26/wc-hackclub/issues"
+    "url": "https://github.com/Sheep26/13DTS-Database-Assesment/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sheep26/wc-hackclub.git"
+    "url": "git+https://github.com/Sheep26/13DTS-Database-Assesment.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Drew Fitzgerald",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
+  },
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
   }
 }
