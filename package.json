@@ -1,14 +1,14 @@
 {
-  "name": "13dts-database-assesment",
+  "name": "wc-hackclub",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Sheep26/13DTS-Database-Assesment#readme",
+  "homepage": "https://github.com/Sheep26/wc-hackclub#readme",
   "bugs": {
-    "url": "https://github.com/Sheep26/13DTS-Database-Assesment/issues"
+    "url": "https://github.com/Sheep26/wc-hackclubt/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sheep26/13DTS-Database-Assesment.git"
+    "url": "git+https://github.com/Sheep26/wc-hackclub.git"
   },
   "license": "ISC",
   "author": "Drew Fitzgerald",
