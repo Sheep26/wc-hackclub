@@ -5,12 +5,7 @@ html, body {
 
 body {
     scrollbar-width: thin;
-    background: linear-gradient(
-        135deg,
-        rgb(17, 17, 17) 0%,
-        rgb(17, 17, 17) 55%,
-        rgb(42, 38, 26) 100%
-    );
+    background: rgb(36, 36, 36);
 
     background-attachment: fixed;
     display: flex;
@@ -58,13 +53,13 @@ select:-webkit-autofill:focus {
     font-family: "Plus Jakarta Sans", "Inter", sans-serif;
 }
 
-.gap {
+.normal-gap {
     gap: 4px;
 }
 
 .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .column {
@@ -192,13 +187,6 @@ footer * {
     display: none;
 }
 
-.leaderboard-student {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 .space-between {
     justify-content: space-between;
 }
@@ -262,20 +250,6 @@ table, th, td {
     gap: 8px;
 }
 
-.leaderboard-place {
-    border-radius: 8px;
-    background-color: rgb(65, 65, 65);
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: unset;
-    font-size: 0.85rem;
-}
-
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -288,6 +262,11 @@ main {
     color: rgb(255, 255, 255);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+.wc-text {
+    font-size: 20px;
 }
 
 nav .hamburger {
@@ -337,18 +316,48 @@ nav .hamburger {
 }
 
 nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     background-color: rgb(35, 34, 34);
-    padding: 8px;
-    padding-left: 12px;
+    padding: 16px;
+}
+
+.hackclub-text {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    max-width: 16ch;
+    overflow-wrap: break-word;
+}
+
+.footer-text {
+    text-align: center;
+    max-width: 64ch;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+
+.home {
+    min-height: 88vh;
+}
+
+.overflow-wrap {
+    overflow-wrap: break-word;
 }
 
 @media screen and (min-width: 860px) {
     .hide-desktop {
         display: none;
+    }
+
+    .home {
+        min-height: 66vh;
     }
 
     .hide-mobile {
@@ -357,5 +366,11 @@ nav {
 
     nav {
         background-color: unset;
+    }
+
+    .terminal {
+        min-width: 40vw;
+        max-width: 40vw;
+        min-height: 30vh;
     }
 }
